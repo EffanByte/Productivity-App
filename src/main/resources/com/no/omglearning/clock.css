@@ -1,0 +1,17 @@
+.hour-hand {
+    -fx-stroke: black;
+    -fx-stroke-width: 5;
+    -fx-stroke-line-cap: round;
+}
+
+.minute-hand {
+    -fx-stroke: black;
+    -fx-stroke-width: 3;
+    -fx-stroke-line-cap: round;
+}
+
+.second-hand {
+    -fx-stroke: red;
+    -fx-stroke-width: 1;
+    -fx-stroke-line-cap: round;
+}

@@ -1,0 +1,8 @@
+
+.button {
+-fx-background-image: url(
+"file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/trash.jpeg");
+-fx-background-size: contain;
+-fx-background-repeat: no-repeat;
+-fx-background-color:transparent;
+}

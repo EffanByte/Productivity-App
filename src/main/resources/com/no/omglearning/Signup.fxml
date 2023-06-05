@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/OMGLEARNING/src/main/resources/com/no/OMGLEARNING/loginbg.jpg);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.no.omglearning.Signup">
+   <children>
+      <TextField fx:id="username" layoutX="181.0" layoutY="37.0" />
+      <TextField fx:id="hobbies" layoutX="182.0" layoutY="219.0" prefHeight="47.0" prefWidth="150.0" />
+      <TextField fx:id="fos" layoutX="182.0" layoutY="284.0" />
+      <Label layoutX="80.0" layoutY="41.0" text="Username" />
+      <Label layoutX="80.0" layoutY="98.0" text="Password" />
+      <Label layoutX="80.0" layoutY="163.0" text="Confirm Password" />
+      <Label layoutX="80.0" layoutY="223.0" text="Hobbies" />
+      <Label layoutX="80.0" layoutY="288.0" text="Field of Study" />
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="231.0" layoutY="339.0" mnemonicParsing="false" onAction="#signedup" text="Sign up" />
+      <PasswordField fx:id="pass" layoutX="182.0" layoutY="94.0" />
+      <PasswordField fx:id="confirmpass" layoutX="182.0" layoutY="159.0" />
+      <Label fx:id="warn" layoutX="332.0" layoutY="162.0" prefHeight="20.0" prefWidth="234.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userwarn" layoutX="339.0" layoutY="41.0" text="Username already exists!" textFill="RED" visible="false" />
+      <Label fx:id="fillout" layoutX="377.0" layoutY="343.0" text="Fill out all the fields!" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="warn" layoutX="330.0" layoutY="131.0" text="The passwords don't match!" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

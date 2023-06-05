@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/OMGLEARNING/src/main/resources/com/no/OMGLEARNING/loginbg.jpg);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.no.omglearning.Login">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="97.0" layoutX="252.0" layoutY="65.0" style="-fx-blend-mode: multiply;">
+         <image>
+            <Image url="@loginicon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="user" layoutX="225.0" layoutY="175.0" />
+      <Label layoutX="147.0" layoutY="179.0" text="Username:" />
+      <Label layoutX="149.0" layoutY="220.0" text="Password:" />
+      <Button fx:id="login" layoutX="225.0" layoutY="275.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button fx:id="signup" layoutX="318.0" layoutY="275.0" mnemonicParsing="false" onAction="#signup" text="Signup" />
+      <PasswordField fx:id="pass" layoutX="226.0" layoutY="216.0" />
+   </children>
+</AnchorPane>

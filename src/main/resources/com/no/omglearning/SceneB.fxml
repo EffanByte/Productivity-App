@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="notebook" prefHeight="715.0" prefWidth="966.0" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/deskpic.jpg);" stylesheets="@Desk.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.no.omglearning.Checkbox">
+   <children>
+      <AnchorPane layoutX="146.0">
+         <children>
+            <ImageView fitHeight="713.0" fitWidth="575.0" layoutX="9.0">
+               <image>
+                  <Image url="@Notepic3.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="lebel1" alignment="TOP_LEFT" layoutX="77.0" layoutY="83.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel2" alignment="TOP_LEFT" layoutX="87.0" layoutY="130.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel3" alignment="TOP_LEFT" layoutX="88.0" layoutY="185.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel4" alignment="TOP_LEFT" layoutX="87.0" layoutY="232.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel5" alignment="TOP_LEFT" layoutX="95.0" layoutY="280.0" prefHeight="47.0" prefWidth="410.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel6" alignment="TOP_LEFT" layoutX="87.0" layoutY="333.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel7" alignment="TOP_LEFT" layoutX="87.0" layoutY="380.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel9" alignment="TOP_LEFT" layoutX="87.0" layoutY="476.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lebel8" alignment="TOP_LEFT" layoutX="87.0" layoutY="431.0" prefHeight="47.0" prefWidth="419.0" wrapText="true">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="tick1" layoutX="506.0" layoutY="89.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick6" layoutX="506.0" layoutY="339.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick4" layoutX="506.0" layoutY="238.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick3" layoutX="506.0" layoutY="191.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick5" layoutX="506.0" layoutY="286.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick2" layoutX="506.0" layoutY="136.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick9" layoutX="504.0" layoutY="487.0" mnemonicParsing="false" prefWidth="17.0" stylesheets="@style.css" />
+            <CheckBox fx:id="tick8" layoutX="506.0" layoutY="437.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <CheckBox fx:id="tick7" layoutX="506.0" layoutY="386.0" mnemonicParsing="false" stylesheets="@style.css" />
+            <Label layoutX="348.0" layoutY="24.0" prefHeight="18.0" prefWidth="61.0" text="To-do List" />
+            <FlowPane layoutX="56.0" layoutY="531.0" prefHeight="168.0" prefWidth="362.0">
+               <children>
+                  <Button fx:id="easy" mnemonicParsing="false" onAction="#setEasy" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/buttonBG.jpeg)" text="Easy" textFill="WHITE" />
+                  <Button fx:id="medium" mnemonicParsing="false" onAction="#setMedium" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/buttonBG.jpeg);" text="Medium" textFill="WHITE" />
+                  <Button fx:id="hard" mnemonicParsing="false" onAction="#setHard" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/buttonBG.jpeg);" text="Hard" textFill="WHITE" />
+                  <Button fx:id="taskcheck" mnemonicParsing="false" onAction="#complete" style="-fx-background-image: url(file:///Users/exter/IdeaProjects/Levelling_System/src/main/resources/com/example/levelling_system/buttonBG.jpeg);" text="Check Task" textFill="WHITE" />
+                  <TextField fx:id="TaskEnter" onAction="#DispText" prefHeight="105.0" prefWidth="462.0" promptText="Enter your Task Here" />
+               </children>
+            </FlowPane>
+            <Button fx:id="Trash1" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="544.0" layoutY="91.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash2" layoutX="544.0" layoutY="138.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash3" layoutX="544.0" layoutY="193.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash4" layoutX="544.0" layoutY="240.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash5" layoutX="544.0" layoutY="288.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash6" layoutX="544.0" layoutY="341.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash7" layoutX="544.0" layoutY="388.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash8" layoutX="544.0" layoutY="439.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+            <Button fx:id="Trash9" layoutX="544.0" layoutY="489.0" mnemonicParsing="false" onAction="#trash" stylesheets="@button.css" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="Back" layoutX="27.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="75.0" text="Go Back" />
+   </children>
+</AnchorPane>
