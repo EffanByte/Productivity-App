@@ -1,6 +1,5 @@
 package com.no.omglearning;
 import javafx.scene.paint.Color;
-
 import java.sql.*;
 import java.util.ArrayList;
 

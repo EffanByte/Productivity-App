@@ -1,5 +1,4 @@
 package com.no.omglearning;
-import com.interactivemesh.jfx.importer.obj.ObjModelImporter;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -26,15 +25,15 @@ import javafx.scene.transform.Transform;
 import javafx.scene.transform.Translate;
 import javafx.util.Duration;
 import java.io.IOException;
-import java.net.URL;
 import java.sql.SQLException;
 import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import static com.no.omglearning.Model.loadModel;
+
 public class Alarm {
-    static int numberoftimers;
     static Scene scene;
     public static Scene alarm(){
         ToggleButton Pom = new ToggleButton("Start Pom Timer");
@@ -161,16 +160,6 @@ Controller.switchtoModel(event);
             return scene;
         }
 
-
-    private static Group loadModel(URL url) {
-        Group modelRoot = new Group();
-        ObjModelImporter obj = new ObjModelImporter();
-        obj.read(url);
-        for (MeshView view : obj.getImport()) {
-            modelRoot.getChildren().add(view);
-        }
-        return modelRoot;
-    }
 
     public static LinearGradient Gradiant() {
         // Define the stops for the linear gradient

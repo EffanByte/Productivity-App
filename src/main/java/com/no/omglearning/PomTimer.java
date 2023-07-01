@@ -1,9 +1,7 @@
 package com.no.omglearning;
 public class PomTimer extends java.lang.Thread {
     private static int minute;
-    PomTimer(int min){
-        minute = min;
-    }
+
     PomTimer(){
 
     }

@@ -34,15 +34,5 @@ public class AudioPlayer {
             mediaPlayer.setVolume(value);
         }
     }
-    public static void playing(){
-        if (playing){
-            play();
-            playing = true;
-        }
-        else {
-            pause();
-            playing = false;
 
-        }
-    }
 }

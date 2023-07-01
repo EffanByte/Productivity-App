@@ -1,6 +1,5 @@
 package com.no.omglearning;
 import com.interactivemesh.jfx.importer.obj.ObjModelImporter;
-import javafx.geometry.Bounds;
 import javafx.geometry.Point3D;
 import javafx.scene.*;
 import javafx.scene.Cursor;
@@ -36,7 +35,6 @@ AnchorPane root = new AnchorPane();
         Group alarm = loadModel(Model.class.getResource("alarm.obj"));
         Group flip = loadModel(Model.class.getResource("switch.obj"));
 addTexture(floor, new Image((Objects.requireNonNull(Model.class.getResource("woodtexture.jpg")).openStream())));
-Image floorimage = new Image(Objects.requireNonNull(Model.class.getResource("WP2.jpeg")).openStream());
 root.setTranslateX(alarm.getTranslateX());
 root.setTranslateY(alarm.getTranslateY());
 root.setTranslateZ(alarm.getTranslateZ());
@@ -67,7 +65,6 @@ Group music = loadModel(Model.class.getResource("musicnote.obj"));
         });
         plant.setCursor(Cursor.HAND);
         todo.setCursor(Cursor.HAND);
-        Bounds bounds = todo.getBoundsInLocal();
         Group bookcase = loadModel(Model.class.getResource("Bookcase3.obj"));
         Group modelRoot = new Group(floor, wall, roof, table, alarm, todo, chair, bookcase, plant, flip);
         modelRoot.setTranslateX(10);
@@ -184,19 +181,14 @@ AudioPlayer.pause();
         });
         modelRoot.getChildren().add(switchon);
         scene.setFill(YGradient());
-        flip.setOnMouseClicked(MouseEvent -> {
-            if (switchon.isLightOn())
-            switchon.setLightOn(false);
-            else
-                switchon.setLightOn(true);
-        });
+        flip.setOnMouseClicked(MouseEvent -> switchon.setLightOn(!switchon.isLightOn()));
         bookcase.setCursor(Cursor.HAND);
         lamp.setCursor(Cursor.HAND);
         flip.setCursor(Cursor.HAND);
         music.setCursor(Cursor.HAND);
         return scene;
     }
-    private static Group loadModel(URL url) {
+    static Group loadModel(URL url) {
         Group modelRoot = new Group();
         ObjModelImporter obj = new ObjModelImporter();
         obj.read(url);
@@ -213,8 +205,7 @@ AudioPlayer.pause();
                 new Stop(0.2, Color.web("#FFE4C4")),
                 new Stop(0.5, Color.web("#FFF8DC"))
         };
-        LinearGradient gradient = new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops);
-        return gradient;
+        return new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops);
     }
 
     private static void setMaterial(Group group, Material material) {
@@ -233,8 +224,7 @@ AudioPlayer.pause();
         material.setDiffuseMap(diffuseMap);
 
         for (Node node : group.getChildren()) {
-            if (node instanceof Shape3D) {
-                Shape3D shape = (Shape3D) node;
+            if (node instanceof Shape3D shape) {
                 shape.setMaterial(material);
             }
         }

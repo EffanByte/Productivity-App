@@ -6,7 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ public class Data {
 @FXML
 private Label user, level, xp, hobbies, fos;
     @FXML
-    void Back(ActionEvent event) throws IOException, InterruptedException {
+    void Back(ActionEvent event) throws IOException {
 Controller.switchtoModel(event);
     }
     public void initialize() throws SQLException {

@@ -15,8 +15,6 @@ public class Task {
     }
 
     private double XP;
-    private int level;
-
     void completeEasy() throws SQLException {
 MyJDBC.increaseXP(2.5);
 MyJDBC.increaseLevel();

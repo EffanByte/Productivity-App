@@ -19,7 +19,7 @@ public  class Checkbox extends Task implements Initializable {
     @FXML
     private CheckBox tick1, tick2, tick3, tick4, tick5, tick6, tick7, tick8, tick9;
     @FXML
-    private Button Trash1, Trash2, Trash3, Trash4, Trash5, Trash6, Trash7, Trash8, Trash9, Back;
+    private Button Trash1, Trash2, Trash3, Trash4, Trash5, Trash6, Trash7, Trash8, Trash9;
 
     @FXML
     private TextField TaskEnter;
@@ -61,29 +61,18 @@ public  class Checkbox extends Task implements Initializable {
     }
 
     @FXML
-    void setEasy(ActionEvent event) {
+    void setEasy() {
         difficulty = 1;
     }
 
     @FXML
-    void setMedium(ActionEvent event) {
+    void setMedium() {
         difficulty = 2;
     }
 
     @FXML
-    void setHard(ActionEvent event) {
+    void setHard() {
         difficulty = 3;
-    }
-
-    @FXML
-    void printtext(ActionEvent event) throws Exception {
-//        Group root = new Group();
-//        Stage Test = new Stage();
-//        Scene inp = new Scene(root);
-//        Test.setScene(inp);
-//
-//Test.show();
-//TextField Task = new TextField();
     }
 
     @FXML
@@ -125,7 +114,6 @@ public  class Checkbox extends Task implements Initializable {
     @FXML
     void labelText() throws SQLException {
         String taskInput = TaskEnter.getText();
-        Text tmp = new Text(taskInput);
         List<Label> labelList = Arrays.asList(lebel1, lebel2, lebel3, lebel4, lebel5, lebel6, lebel7, lebel8);
         for (Label label : labelList) {
 
