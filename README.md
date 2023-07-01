@@ -9,5 +9,3 @@ The plant logs me out.
 The bookcase shows me my stats.
 The Alarm clock takes me to a pomodoro timer, where I can start a timer and earn XP based on my study time.
 I added switches and a lamp to make JavaFX's lighting system interact with the models to make it more life-like.
-
-I used absolute addresses for all the images/textures I added so I might have to redo that part so that the program is easier to run.
